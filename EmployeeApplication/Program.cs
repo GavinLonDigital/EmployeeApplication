@@ -27,7 +27,7 @@ namespace EmployeeApplication
 
             Console.WriteLine("Please enter the employee's annual salary");
 
-            annualSalary = Convert.ToDecimal(Console.ReadLine());
+            annualSalary = Decimal.Parse(Console.ReadLine(),NumberStyles.AllowDecimalPoint, CultureInfo.InvariantCulture);
 
             Console.WriteLine("Please enter the employee's gender ('f' = female, 'm' = male)");
 
